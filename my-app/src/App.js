@@ -1,16 +1,14 @@
-import css from './App.module.css';
-import Sidebar from "./components/Sidebar";
-import NavBarForm from "./components/NavBarForm.js"
+import "./App.css";
+import Content from "./components/Content";
+import Loader from "./components/Loader.js";
+
+
 
 function App() {
-  return (
-    <div className={css.App}>
-      {/* Add your components here */}
-      <Sidebar />
-      <NavBarForm />
-      
-    </div>
-  );
+  return <div className="App">
+       <Content />
+       <Loader />
+  </div>;
 }
 
 export default App;
